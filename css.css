@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #FAFAF9;
+
+  padding-block: 20px;
+  padding-inline: 10px;
+}
+
+.rounded__start {
+  display: block;
+  padding: .5rem;
+  border-radius: 50%;
+  background-color: #F5C044;
+  width: 20px;
+  height: 20px;
+}
+
+.left__content {
+  p {
+    color: #52525A;
+    padding-block: 20px;
+  }
+}
+
+.list__items {
+  display: grid;
+  gap: 1rem;
+  width: 400px;
+  margin-block: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+article {
+  box-shadow: 0px 6px 26px 0px #D4D4D850;
+  border-radius: 12px;
+  padding: 22px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #FFFFFF;
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+  }
+}
+
+@media screen and (width>1023px) {
+  body {
+    padding-inline: 30px;
+  }
+
+  section {
+    align-items: center;
+  }
+
+  article {
+    max-width: 300px;
+  }
+
+  .article__1 {
+    margin-left: 180px;
+  }
+
+  .article__2 {
+    margin-right: 180px;
+  }
+}
+
+@media screen and (width>1260px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+  }
+
+  .left__content,
+  section {
+    width: 45%;
+  }
+}
